@@ -1,0 +1,167 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f3;
+  color: #17211d;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #167b55;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #718078;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card, .form-section, .expense-section {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0000000c;
+}
+
+.card h3 {
+  color: #78847e;
+  font-size: 14px;
+}
+
+.card h2 {
+  color: #167b55;
+  margin-top: 12px;
+  font-size: 25px;
+}
+
+.form-section, .expense-section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #167b55;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0e6242;
+}
+
+#cancelEdit {
+  background: #718078;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+th, td {
+  padding: 14px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e8eeea;
+}
+
+th {
+  color: #718078;
+  font-size: 12px;
+}
+
+td {
+  font-size: 13px;
+}
+
+.action-btn {
+  padding: 7px 10px;
+  margin: 2px;
+}
+
+.delete-btn {
+  background: #dc4c4c;
+}
+
+.edit-btn {
+  background: #e99a4b;
+}
+
+#emptyMessage, #count {
+  color: #78847e;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media(max-width: 650px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  form, .filters {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    padding: 18px 10px;
+  }
+}
